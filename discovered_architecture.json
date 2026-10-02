@@ -1,0 +1,13 @@
+{
+  "name": "KuCoinTriangularHFT-v2",
+  "type": "ultra_low_latency_arb",
+  "topology": {
+    "orderbook_parser": "lock_free_ring_buffer",
+    "spread_computer": "simd_vectorized",
+    "signal": "bellman_ford_negative_cycle",
+    "execution": "atomic_ccxt_kucoin"
+  },
+  "estimated_edge_bps": 8.5,
+  "latency_target_us": 150,
+  "task": "Design HFT arb topology for {\"USDT-BTC-ETH\": {\"BTC/USDT\": {\"top_ask\": [64475.0, 0.19037206]}}}. Output JSON blueprint."
+}
